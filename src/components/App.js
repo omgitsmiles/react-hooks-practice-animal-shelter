@@ -36,7 +36,7 @@ function App() {
   }
 
   function onAdoptPet(petID){
-    const adoptPet =  pets.map(pet => {
+    const adoptPet = pets.map(pet => {
       return pet.id === petID ?  {...pet, isAdopted: true} : pet
     })
     setPets(adoptPet)
